@@ -64,7 +64,7 @@ async function fetchRoastFromAPI(prompt, intensity) {
           content: prompt
         }
       ],
-      max_tokens: 50,  // Limit to keep the response short
+      max_tokens: 200,  // Limit to keep the response short
     }),
   });
 
