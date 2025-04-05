@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Roast Generator</title>
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-300 text-white flex items-center justify-center min-h-screen px-4">
+
+  <div class="bg-red-500 p-8 rounded-2xl shadow-lg w-full max-w-md text-center">
+    <h1 class="text-3xl font-bold mb-6">🔥 AI Roast Generator 🔥</h1>
+
+    <input type="text" id="userInput" placeholder="Enter your name or description..." class="w-full p-3 rounded-lg text-black mb-4"/>
+
+    <label for="description" class="block mb-2 text-left text-sm text-gray-300">Describe yourself or your hobbies (one-liner):</label>
+    <input type="text" id="description" placeholder="A brief intro about you..." class="w-full p-3 rounded-lg text-black mb-4"/>
+
+    <label for="intensity" class="block mb-2 text-left text-sm text-gray-300">Roast Intensity:</label>
+    <select id="intensity" class="w-full p-3 mb-4 rounded-lg text-black">
+      <option value="mild">Toasted Marshmallow (mild)</option>
+      <option value="medium">Campfire Burn (medium)</option>
+      <option value="savage">Charred Soul (savage)</option>
+    </select>
+
+    <button onclick="generateRoast()" class="bg-blue-600 hover:bg-red-700 w-full p-3 rounded-lg font-bold transition">Roast Me</button>
+
+    <div id="roastResult" class="mt-6 text-xl font-semibold text-black"></div>
+  </div>
+
+</body>
+</html>
